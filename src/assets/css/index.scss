@@ -1,0 +1,153 @@
+div.topinclude{
+    div.topimg{
+        height: 46px;
+        background: url(../img/common/common1.jpg) center center;
+
+    }
+    img.logo{
+        display: block;
+        margin: 0 auto;
+    }
+    div.column{
+        width: 100%;
+        border-bottom: 2px solid #000;
+        div.column1200{
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            ul{
+                margin: 0 auto;
+                width: fit-content;
+                display: flex;
+                li{
+                    font-size: 22px;
+                    position: relative;
+                    padding: 0 30px;
+                    &::after{
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 5px;
+                        content: '';
+                        height: 20px;
+                        width:0;
+                        border-left: 1px solid #000;
+                    }
+                    &:last-child{
+                        &::after{
+                            border: none;
+                        }
+                    }
+                }
+            }
+            form{
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+}
+ul.indextop{
+    width: fit-content;
+    font-size: 16px;
+    color: #8e8e8e;
+    display: flex;
+    margin: 0 auto;
+    li{
+        padding: 0 30px;
+    }
+}
+div.ad1-1{
+    width: 1200px;
+    margin: 0 auto;
+    div{
+        padding-bottom: 20px;
+        img{
+            display: block;
+            
+        }
+    }
+}
+div.ad2-1{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    div.bantong{
+        width: 594px;
+        div{
+            padding-bottom: 20px;
+        }
+    }
+}
+div.a1{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    div.leftcontent{
+        width: 464px;
+    }
+}
+
+.slideBox {
+    width: 450px;
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd;
+    .hd {
+        height: 15px;
+        overflow: hidden;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        z-index: 1;
+        ul {
+            overflow: hidden;
+            zoom: 1;
+            float: left;
+            li {
+                float: left;
+                margin-right: 2px;
+                width: 15px;
+                height: 15px;
+                line-height: 14px;
+                text-align: center;
+                background: #fff;
+                cursor: pointer;
+                &.on {
+                    background: #f00;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .bd {
+        position: relative;
+        height: 100%;
+        z-index: 0;
+        li {
+            zoom: 1;
+            vertical-align: middle;
+        }
+        img {
+            width: 450px;
+            height: 230px;
+            display: block;
+        }
+    }
+    .next {
+        left: auto;
+        right: 3%;
+        background-position: 8px 5px;
+    }
+    .prevStop {
+        display: none;
+    }
+    .nextStop {
+        display: none;
+    }
+}
