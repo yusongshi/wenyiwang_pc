@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import 'include';
+div.contentbox{
+    padding-top: 50px;
+    @include includeflex();
+    div.leftcontent{
+        width: 850px;
+        ul.col_list{
+            li{
+                border-bottom: 1px dashed #c8c0b0;
+                margin-bottom: 20px;
+                h1{
+                    font-size: 26px;
+                    text-align: left;
+                    line-height: 44px;
+                }
+                h2{
+                    font-size: 16px;
+                    line-height: 26px;
+                    padding: 20px 0;
+                }
+                &:last-child{
+                    border: none;
+                }
+            }
+        }
+    }
+}

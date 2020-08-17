@@ -1,0 +1,33 @@
+div.contentbox {
+  padding-top: 50px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+div.contentbox div.leftcontent {
+  width: 850px;
+}
+
+div.contentbox div.leftcontent ul.col_list li {
+  border-bottom: 1px dashed #c8c0b0;
+  margin-bottom: 20px;
+}
+
+div.contentbox div.leftcontent ul.col_list li h1 {
+  font-size: 26px;
+  text-align: left;
+  line-height: 44px;
+}
+
+div.contentbox div.leftcontent ul.col_list li h2 {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 20px 0;
+}
+
+div.contentbox div.leftcontent ul.col_list li:last-child {
+  border: none;
+}
+/*# sourceMappingURL=column.css.map */
