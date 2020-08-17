@@ -112,4 +112,79 @@ select:focus {
 [v-cloak] {
   display: none;
 }
+
+/**广告位样式**/
+div.ad1-1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.ad1-1 div {
+  padding-bottom: 20px;
+}
+
+div.ad1-1 div img {
+  display: block;
+}
+
+div.ad2-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.ad2-1 div.bantong {
+  width: 594px;
+}
+
+div.ad2-1 div.bantong div {
+  padding-bottom: 20px;
+}
+
+div.ad3-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.ad3-1 div.ad3-1min {
+  width: 384px;
+}
+
+div.ad3-1 div.ad3-1min div {
+  padding-bottom: 20px;
+}
+
+/**广告位样式-END**/
+/**底部include调用**/
+div.includebottom {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.includebottom ul.ib1 {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
+  border-top: 2px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+div.includebottom div.ib2 {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+div.includebottom div.ib2 img.dzjg {
+  display: block;
+  height: 62px;
+}
+
+/**底部include调用-END**/
 /*# sourceMappingURL=pc_common.css.map */

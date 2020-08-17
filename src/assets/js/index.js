@@ -1,1 +1,1 @@
-jQuery(".slideBox").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+jQuery(".slideBox").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:false});

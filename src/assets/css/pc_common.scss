@@ -92,6 +92,64 @@ select {
     border: 1px solid #dcdcdc;
   }
 }
-[v-cloak]{display: none;}
+[v-cloak] {
+  display: none;
+}
 
 @import 'include';
+
+/**广告位样式**/
+div.ad1-1 {
+  width: 1200px;
+  margin: 0 auto;
+  div {
+    padding-bottom: 20px;
+    img {
+      display: block;
+    }
+  }
+}
+div.ad2-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  div.bantong {
+    width: 594px;
+    div {
+      padding-bottom: 20px;
+    }
+  }
+}
+div.ad3-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  div.ad3-1min {
+    width: 384px;
+    div {
+      padding-bottom: 20px;
+    }
+  }
+}
+/**广告位样式-END**/
+/**底部include调用**/
+div.includebottom {
+  width: 1200px;
+  margin: 0 auto;
+  ul.ib1 {
+	@include includeflex();
+	  width: 1200px;
+    border-top: 2px solid #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
+  }
+  div.ib2{
+	  @include includeflex(1000px);
+	  img.dzjg{
+		  display: block;
+		  height: 62px;
+	  }
+  }
+}
+/**底部include调用-END**/

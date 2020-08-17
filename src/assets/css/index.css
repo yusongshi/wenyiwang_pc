@@ -65,34 +65,6 @@ ul.indextop li {
   padding: 0 30px;
 }
 
-div.ad1-1 {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-div.ad1-1 div {
-  padding-bottom: 20px;
-}
-
-div.ad1-1 div img {
-  display: block;
-}
-
-div.ad2-1 {
-  display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  margin: 0 auto;
-}
-
-div.ad2-1 div.bantong {
-  width: 594px;
-}
-
-div.ad2-1 div.bantong div {
-  padding-bottom: 20px;
-}
-
 div.a1 {
   width: 1200px;
   margin: 0 auto;
@@ -105,11 +77,10 @@ div.a1 div.leftcontent {
 }
 
 .slideBox {
-  width: 450px;
-  height: 230px;
+  width: 688px;
+  height: 430px;
   overflow: hidden;
   position: relative;
-  border: 1px solid #ddd;
 }
 
 .slideBox .hd {
@@ -150,13 +121,24 @@ div.a1 div.leftcontent {
 }
 
 .slideBox .bd li {
+  position: relative;
   zoom: 1;
   vertical-align: middle;
 }
 
-.slideBox .bd img {
-  width: 450px;
-  height: 230px;
+.slideBox .bd li h1 {
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+}
+
+.slideBox .bd li img {
+  width: 688px;
+  height: 430px;
   display: block;
 }
 
@@ -172,5 +154,112 @@ div.a1 div.leftcontent {
 
 .slideBox .nextStop {
   display: none;
+}
+
+img.titcommon {
+  display: block;
+  margin: 0 auto;
+}
+
+div.a2 {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.a2 div.leftc {
+  width: 516px;
+}
+
+div.a2 div.leftc img {
+  display: block;
+  width: 516px;
+  height: 337px;
+}
+
+div.a2 div.leftc h1 {
+  font-size: 22px;
+}
+
+div.a2 div.leftc h2 {
+  font-size: 14px;
+  color: #52514f;
+}
+
+div.a2 div.rightc {
+  position: relative;
+}
+
+div.a2 div.rightc img {
+  display: block;
+  width: 300px;
+  height: 463px;
+}
+
+div.a2 div.rightc h1 {
+  position: absolute;
+  width: 300px;
+  height: 96px;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+}
+
+ul.jiaoyiz {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+ul.jiaoyiz li {
+  position: relative;
+  width: 283px;
+}
+
+ul.jiaoyiz li img {
+  display: block;
+}
+
+ul.jiaoyiz li img.play {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  margin: 0 auto;
+}
+
+ul.jiaoyiz li img.content {
+  width: 283px;
+  height: 179px;
+}
+
+div.yibaibai {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.yibaibai div.shuzimsg {
+  width: 892px;
+  height: 444px;
+  background: url(../img/index/index9.jpg) center top no-repeat;
+}
+
+div.yibaibai ul.rightbox {
+  width: 253px;
+}
+
+div.yibaibai ul.rightbox img {
+  display: block;
+  width: 100%;
+  height: 170px;
+}
+
+div.yibaibai ul.rightbox h1 {
+  font-size: 16px;
 }
 /*# sourceMappingURL=index.css.map */

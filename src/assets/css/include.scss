@@ -16,3 +16,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@mixin includeflex($width: 1200px) {
+    width: $width;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}

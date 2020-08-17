@@ -59,29 +59,8 @@ ul.indextop{
         padding: 0 30px;
     }
 }
-div.ad1-1{
-    width: 1200px;
-    margin: 0 auto;
-    div{
-        padding-bottom: 20px;
-        img{
-            display: block;
-            
-        }
-    }
-}
-div.ad2-1{
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    margin: 0 auto;
-    div.bantong{
-        width: 594px;
-        div{
-            padding-bottom: 20px;
-        }
-    }
-}
+
+
 div.a1{
     width: 1200px;
     margin: 0 auto;
@@ -93,11 +72,12 @@ div.a1{
 }
 
 .slideBox {
-    width: 450px;
-    height: 230px;
+    $width: 688px;
+    $height: 430px;
+    width: $width;
+    height: $height;
     overflow: hidden;
     position: relative;
-    border: 1px solid #ddd;
     .hd {
         height: 15px;
         overflow: hidden;
@@ -130,14 +110,25 @@ div.a1{
         height: 100%;
         z-index: 0;
         li {
+            position: relative;
             zoom: 1;
             vertical-align: middle;
+            h1{
+                position: absolute;
+                font-size: 30px;
+                color: #fff;
+                text-align: center;
+                bottom: 60px;
+                left: 0;
+                width: 100%;
+            }
+            img {
+                width: $width;
+                height: $height;
+                display: block;
+            }
         }
-        img {
-            width: 450px;
-            height: 230px;
-            display: block;
-        }
+        
     }
     .next {
         left: auto;
@@ -149,5 +140,102 @@ div.a1{
     }
     .nextStop {
         display: none;
+    }
+}
+
+img.titcommon{
+    display: block;
+    margin: 0 auto;
+}
+div.a2{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    div.leftc{
+        $width: 516px;
+        width: $width;
+        img{
+            display: block;
+            width: $width;
+            height: 337px;
+        }
+        h1{
+            font-size: 22px;
+        }
+        h2{
+            font-size: 14px;
+            color: #52514f;
+        }
+    }
+    div.rightc{
+        position: relative;
+        $width: 300px;
+        $height: 463px;
+        img{
+            display: block;
+            width: $width;
+            height: $height;
+        }
+        h1{
+            position: absolute;
+            width: $width;
+            height: 96px;
+            left: 0;
+            bottom: 0;
+            background: rgba($color: #000000, $alpha: 0.65);
+            color: #fff;
+        }
+    }
+}
+
+ul.jiaoyiz{
+    $width:283px;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    li{
+        position: relative;
+        width: $width;
+        img{
+            display: block;
+            &.play{
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 60px;
+                margin: 0 auto;
+            }
+            &.content{
+                width: $width;
+                height: 179px;
+            }
+        }
+        
+    }
+}
+div.yibaibai{
+    $height: 444px;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    div.shuzimsg{
+        $width:892px;
+        width: $width;
+        height: $height;
+        background: url(../img/index/index9.jpg) center top no-repeat;
+    }
+    ul.rightbox{
+        width: 253px;
+        img{
+            display: block;
+            width: 100%;
+            height: 170px;
+        }
+        h1{
+            font-size: 16px;
+        }
     }
 }
