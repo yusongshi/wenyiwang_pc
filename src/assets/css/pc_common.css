@@ -158,6 +158,86 @@ div.ad3-1 div.ad3-1min div {
 }
 
 /**广告位样式-END**/
+/**顶部include调用**/
+div.topinclude div.topimg {
+  height: 46px;
+  background: url(../img/common/common1.jpg) center center;
+}
+
+div.topinclude img.logo {
+  display: block;
+  margin: 30px auto;
+}
+
+div.topinclude div.column {
+  width: 100%;
+  border-bottom: 2px solid #000;
+}
+
+div.topinclude div.column div.column1200 {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+div.topinclude div.column div.column1200 ul.col {
+  margin: 0 auto 20px;
+  width: fit-content;
+  display: flex;
+}
+
+div.topinclude div.column div.column1200 ul.col li {
+  font-size: 22px;
+  position: relative;
+  padding: 0 30px;
+}
+
+div.topinclude div.column div.column1200 ul.col li::after {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  content: "";
+  height: 20px;
+  width: 0;
+  border-left: 1px solid #000;
+}
+
+div.topinclude div.column div.column1200 ul.col li:last-child::after {
+  border: none;
+}
+
+div.topinclude div.column div.column1200 ul.col li.on {
+  color: red;
+}
+
+div.topinclude div.column div.column1200 form#searchform {
+  width: 118px;
+  padding: 0 10px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 1px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+div.topinclude div.column div.column1200 form#searchform input#contentKey {
+  width: 100px;
+  height: 28px;
+  line-height: 28px;
+  border: none;
+  float: left;
+}
+
+div.topinclude div.column div.column1200 form#searchform input#search {
+  border: none;
+  float: right;
+  padding-top: 5px;
+}
+
+/**顶部include调用-END**/
 /**底部include调用**/
 div.includebottom {
   width: 1200px;
@@ -186,5 +266,76 @@ div.includebottom div.ib2 img.dzjg {
   height: 62px;
 }
 
+div.includebottom2box {
+  background: #f3f1f1;
+  padding: 50px 0;
+}
+
+div.includebottom2box div.includebottom2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.includebottom2box div.includebottom2 ul.ib1 {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
+  border-top: 2px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+div.includebottom2box div.includebottom2 div.ib2 {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+div.includebottom2box div.includebottom2 div.ib2 img.dzjg {
+  padding-top: 20px;
+  display: block;
+  height: 62px;
+}
+
 /**底部include调用-END**/
+/**右侧栏目**/
+div.includeright {
+  width: 300px;
+}
+
+div.includeright img.a1 {
+  display: block;
+  margin: 0 auto;
+}
+
+div.includeright img.title {
+  display: block;
+  margin: 50px auto 30px;
+  width: 300px;
+}
+
+div.includeright ul.list li {
+  font-size: 16px;
+  line-height: 36px;
+  height: 36px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+div.includeright ul.hltph li img {
+  display: block;
+  width: 300px;
+}
+
+div.includeright ul.hltph li h1 {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 12px 0 32px;
+  text-align: center;
+}
+
+/**右侧栏目-END**/
 /*# sourceMappingURL=pc_common.css.map */

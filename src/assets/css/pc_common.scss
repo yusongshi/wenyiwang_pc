@@ -96,7 +96,7 @@ select {
   display: none;
 }
 
-@import 'include';
+@import "include";
 
 /**广告位样式**/
 div.ad1-1 {
@@ -134,22 +134,153 @@ div.ad3-1 {
   }
 }
 /**广告位样式-END**/
+/**顶部include调用**/
+div.topinclude {
+  div.topimg {
+    height: 46px;
+    background: url(../img/common/common1.jpg) center center;
+  }
+  img.logo {
+    display: block;
+    margin: 30px auto;
+  }
+  div.column {
+    width: 100%;
+    border-bottom: 2px solid #000;
+    div.column1200 {
+      width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      ul.col {
+        margin: 0 auto 20px;
+        width: fit-content;
+        display: flex;
+        li {
+          font-size: 22px;
+          position: relative;
+          padding: 0 30px;
+          &::after {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 5px;
+            content: "";
+            height: 20px;
+            width: 0;
+            border-left: 1px solid #000;
+          }
+          &:last-child {
+            &::after {
+              border: none;
+            }
+          }
+          &.on {
+            color: red;
+          }
+        }
+      }
+      form#searchform {
+        width: 118px;
+        padding: 0 10px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: 1px solid #000;
+        border-radius: 10px;
+        overflow: hidden;
+        input#contentKey {
+          width: 100px;
+          height: 28px;
+          line-height: 28px;
+          border: none;
+          float: left;
+        }
+        input#search {
+          border: none;
+          float: right;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}
+/**顶部include调用-END**/
 /**底部include调用**/
 div.includebottom {
   width: 1200px;
   margin: 0 auto;
   ul.ib1 {
-	@include includeflex();
-	  width: 1200px;
+    @include includeflex();
+    width: 1200px;
     border-top: 2px solid #a0a0a0;
     border-bottom: 1px solid #a0a0a0;
   }
-  div.ib2{
-	  @include includeflex(1000px);
-	  img.dzjg{
-		  display: block;
-		  height: 62px;
-	  }
+  div.ib2 {
+    @include includeflex(1000px);
+    img.dzjg {
+      
+      display: block;
+      height: 62px;
+    }
   }
 }
+div.includebottom2box{
+  background: #f3f1f1;
+  padding: 50px 0;
+  div.includebottom2 {
+    width: 1200px;
+    margin: 0 auto;
+    ul.ib1 {
+      @include includeflex();
+      width: 1200px;
+      border-top: 2px solid #a0a0a0;
+      border-bottom: 1px solid #a0a0a0;
+    }
+    div.ib2 {
+      @include includeflex(1000px);
+      img.dzjg {
+        padding-top: 20px;
+        display: block;
+        height: 62px;
+      }
+    }
+  }
+}
+
 /**底部include调用-END**/
+/**右侧栏目**/
+div.includeright {
+  width: 300px;
+  img.a1 {
+    display: block;
+    margin: 0 auto;
+  }
+  img.title {
+    display: block;
+    margin: 50px auto 30px;
+    width: 300px;
+  }
+  ul.list{
+    li{
+      font-size: 16px;
+      line-height: 36px;
+      @include font-overflow(36px);
+    }
+  }
+  ul.hltph {
+    li {
+      img {
+        display: block;
+        width: 300px;
+      }
+      h1 {
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 12px 0 32px;
+        text-align: center;
+      }
+    }
+  }
+}
+/**右侧栏目-END**/

@@ -1,0 +1,36 @@
+div.contentbox {
+  padding-top: 50px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+div.contentbox div.leftcontent {
+  width: 850px;
+}
+
+div.contentbox div.leftcontent h1 {
+  width: 700px;
+  margin: 0 auto;
+  font-size: 35px;
+  text-align: center;
+}
+
+div.contentbox div.leftcontent h2 {
+  font-size: 14px;
+  padding: 20px 0;
+  text-align: center;
+  color: #595959;
+}
+
+div.contentbox div.leftcontent div.dec {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+div.contentbox div.leftcontent div.ctt {
+  font-size: 16px;
+  line-height: 1.8;
+}
+/*# sourceMappingURL=content.css.map */

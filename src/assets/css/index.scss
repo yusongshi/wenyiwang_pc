@@ -1,54 +1,4 @@
-div.topinclude{
-    div.topimg{
-        height: 46px;
-        background: url(../img/common/common1.jpg) center center;
-
-    }
-    img.logo{
-        display: block;
-        margin: 0 auto;
-    }
-    div.column{
-        width: 100%;
-        border-bottom: 2px solid #000;
-        div.column1200{
-            width: 1200px;
-            margin: 0 auto;
-            position: relative;
-            ul{
-                margin: 0 auto;
-                width: fit-content;
-                display: flex;
-                li{
-                    font-size: 22px;
-                    position: relative;
-                    padding: 0 30px;
-                    &::after{
-                        display: block;
-                        position: absolute;
-                        right: 0;
-                        top: 5px;
-                        content: '';
-                        height: 20px;
-                        width:0;
-                        border-left: 1px solid #000;
-                    }
-                    &:last-child{
-                        &::after{
-                            border: none;
-                        }
-                    }
-                }
-            }
-            form{
-                display: block;
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-        }
-    }
-}
+@import 'include';
 ul.indextop{
     width: fit-content;
     font-size: 16px;
@@ -239,3 +189,4 @@ div.yibaibai{
         }
     }
 }
+

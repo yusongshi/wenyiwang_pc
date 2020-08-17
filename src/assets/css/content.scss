@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import 'include';
+div.contentbox{
+    padding-top: 50px;
+    @include includeflex();
+    div.leftcontent{
+        width: 850px;
+        h1{
+            width: 700px;
+            margin: 0 auto;
+            font-size: 35px;
+            text-align: center;
+        }
+        h2{
+            font-size: 14px;
+            padding: 20px 0;
+            text-align: center;
+            color: #595959;
+        }
+        div.dec{
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        div.ctt{
+            font-size: 16px;
+            line-height: 1.8;
+        }
+    }
+}
