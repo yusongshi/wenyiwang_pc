@@ -18,7 +18,8 @@
 }
 @mixin includeflex($width: 1200px) {
     width: $width;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
 }

@@ -239,31 +239,97 @@ div.topinclude div.column div.column1200 form#searchform input#search {
 
 /**顶部include调用-END**/
 /**底部include调用**/
-div.includebottom {
+div.includebottombox {
+  position: relative;
+}
+
+div.includebottombox div.includebottom {
   width: 1200px;
   margin: 0 auto;
 }
 
-div.includebottom ul.ib1 {
+div.includebottombox div.includebottom ul.ib1 {
   width: 1200px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 1200px;
+  width: 1000px;
+  padding: 0 100px;
   border-top: 2px solid #a0a0a0;
   border-bottom: 1px solid #a0a0a0;
 }
 
-div.includebottom div.ib2 {
+div.includebottombox div.includebottom ul.ib1 li {
+  line-height: 56px;
+  position: relative;
+}
+
+div.includebottombox div.includebottom ul.ib1 li::after {
+  content: '';
+  width: 3px;
+  height: 19px;
+  background: url(../img/common/common8.jpg);
+  position: absolute;
+  right: -60px;
+  top: 18px;
+}
+
+div.includebottombox div.includebottom ul.ib1 li:last-child::after {
+  background: none;
+}
+
+div.includebottombox div.includebottom ul.ib1 li.t {
+  cursor: pointer;
+}
+
+div.includebottombox div.includebottom div.ib2 {
   width: 1000px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 30px 0;
 }
 
-div.includebottom div.ib2 img.dzjg {
+div.includebottombox div.includebottom div.ib2 img.dzjg {
+  padding-top: 20px;
   display: block;
   height: 62px;
+}
+
+div.includebottombox div.blackcover {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 58px);
+  background: rgba(0, 0, 0, 0.85);
+  top: 58px;
+}
+
+div.includebottombox div.blackcover div.openlist {
+  width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+div.includebottombox div.blackcover div.openlist img.close {
+  cursor: pointer;
+  display: block;
+  float: right;
+  clear: both;
+  padding: 36px 0 12px;
+}
+
+div.includebottombox div.blackcover div.openlist ul.list li {
+  width: 200px;
+  line-height: 36px;
+  float: left;
+  color: #fff;
+  height: 36px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 div.includebottom2box {
@@ -278,6 +344,7 @@ div.includebottom2box div.includebottom2 {
 
 div.includebottom2box div.includebottom2 ul.ib1 {
   width: 1200px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -288,6 +355,7 @@ div.includebottom2box div.includebottom2 ul.ib1 {
 
 div.includebottom2box div.includebottom2 div.ib2 {
   width: 1000px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;

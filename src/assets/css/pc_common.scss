@@ -207,24 +207,80 @@ div.topinclude {
 }
 /**顶部include调用-END**/
 /**底部include调用**/
-div.includebottom {
-  width: 1200px;
-  margin: 0 auto;
-  ul.ib1 {
-    @include includeflex();
+div.includebottombox{
+  position: relative;
+  div.includebottom {
     width: 1200px;
-    border-top: 2px solid #a0a0a0;
-    border-bottom: 1px solid #a0a0a0;
+    margin: 0 auto;
+    ul.ib1 {
+      @include includeflex();
+      width: (1200px-200px);
+      padding: 0 100px;
+      border-top: 2px solid #a0a0a0;
+      border-bottom: 1px solid #a0a0a0;
+      li{
+        line-height: 56px;
+        position: relative;
+        &::after{
+          content: '';
+          width: 3px ;
+          height: 19px;
+          background: url(../img/common/common8.jpg);
+          position: absolute;
+          right: -60px;
+          top: 18px;
+        }
+        &:last-child{
+          &::after{
+            background: none;
+          }
+        }
+        &.t{
+          cursor: pointer;
+        }
+      }
+    }
+    div.ib2 {
+      @include includeflex(1000px);
+      padding: 30px 0;
+      img.dzjg {
+        padding-top: 20px;
+        display: block;
+        height: 62px;
+      }
+    }
   }
-  div.ib2 {
-    @include includeflex(1000px);
-    img.dzjg {
-      
-      display: block;
-      height: 62px;
+  div.blackcover{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 58px);
+    background: rgba($color: #000000, $alpha: .85);
+    top: 58px;
+    div.openlist{
+      width: 1200px;
+      margin: 0 auto;
+      color: #fff;
+      img.close{
+        cursor: pointer;
+        display: block;
+        float: right;
+        clear: both;
+        padding: 36px 0 12px;
+      }
+      ul.list{
+        li{
+          width: 200px;
+          line-height: 36px;
+          float: left;
+          color: #fff;
+          @include font-overflow(36px);
+        }
+      }
     }
   }
 }
+
 div.includebottom2box{
   background: #f3f1f1;
   padding: 50px 0;

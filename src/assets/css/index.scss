@@ -6,7 +6,7 @@ ul.indextop{
     display: flex;
     margin: 0 auto;
     li{
-        padding: 0 30px;
+        padding: 20px 30px;
     }
 }
 
@@ -18,84 +18,95 @@ div.a1{
     justify-content: space-between;
     div.leftcontent{
         width: 464px;
-    }
-}
-
-.slideBox {
-    $width: 688px;
-    $height: 430px;
-    width: $width;
-    height: $height;
-    overflow: hidden;
-    position: relative;
-    .hd {
-        height: 15px;
-        overflow: hidden;
-        position: absolute;
-        right: 5px;
-        bottom: 5px;
-        z-index: 1;
-        ul {
-            overflow: hidden;
-            zoom: 1;
-            float: left;
-            li {
-                float: left;
-                margin-right: 2px;
-                width: 15px;
-                height: 15px;
-                line-height: 14px;
-                text-align: center;
-                background: #fff;
-                cursor: pointer;
-                &.on {
-                    background: #f00;
-                    color: #fff;
+        ul.yizhidao{
+            padding-top: 16px;
+            li{
+                font-size: 16px;
+                line-height: 38px;
+                @include font-overflow(38px);
+                &:nth-child(3n){
+                    border-bottom: 1px solid #eee;
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
                 }
             }
         }
     }
-    .bd {
+    .slideBox {
+        $width: 688px;
+        $height: 430px;
+        width: $width;
+        height: $height;
+        overflow: hidden;
         position: relative;
-        height: 100%;
-        z-index: 0;
-        li {
-            position: relative;
-            zoom: 1;
-            vertical-align: middle;
-            h1{
-                position: absolute;
-                font-size: 30px;
-                color: #fff;
-                text-align: center;
-                bottom: 60px;
-                left: 0;
-                width: 100%;
-            }
-            img {
-                width: $width;
-                height: $height;
-                display: block;
+        .hd {
+            height: 4px;
+            overflow: hidden;
+            position: absolute;
+            left: 300px;
+            bottom: 25px;
+            z-index: 1;
+            ul {
+                overflow: hidden;
+                zoom: 1;
+                float: left;
+                li {
+                    float: left;
+                    margin-right: 7px;
+                    width: 25px;
+                    height: 4px;
+                    background: #888;
+                    cursor: pointer;
+                    &.on {
+                        background: #db3a45;
+                    }
+                }
             }
         }
-        
-    }
-    .next {
-        left: auto;
-        right: 3%;
-        background-position: 8px 5px;
-    }
-    .prevStop {
-        display: none;
-    }
-    .nextStop {
-        display: none;
+        .bd {
+            position: relative;
+            height: 100%;
+            z-index: 0;
+            li {
+                position: relative;
+                zoom: 1;
+                vertical-align: middle;
+                h1{
+                    position: absolute;
+                    font-size: 30px;
+                    color: #fff;
+                    text-align: center;
+                    bottom: 60px;
+                    left: 0;
+                    width: 100%;
+                }
+                img {
+                    width: $width;
+                    height: $height;
+                    display: block;
+                }
+            }
+            
+        }
+        .next {
+            left: auto;
+            right: 3%;
+            background-position: 8px 5px;
+        }
+        .prevStop {
+            display: none;
+        }
+        .nextStop {
+            display: none;
+        }
     }
 }
 
+
+
 img.titcommon{
     display: block;
-    margin: 0 auto;
+    margin: 60px auto 40px;
 }
 div.a2{
     display: flex;
@@ -112,10 +123,15 @@ div.a2{
         }
         h1{
             font-size: 22px;
+            line-height: 70px;
+            text-align: center;
+            @include font-overflow(70px);
         }
         h2{
             font-size: 14px;
+            line-height: 26px;
             color: #52514f;
+            @include font-overflow-more(2);
         }
     }
     div.rightc{
@@ -129,8 +145,10 @@ div.a2{
         }
         h1{
             position: absolute;
-            width: $width;
+            padding: 30px 30px 0;
             height: 96px;
+            font-size: 20px;
+            line-height: 30px;
             left: 0;
             bottom: 0;
             background: rgba($color: #000000, $alpha: 0.65);
@@ -162,7 +180,13 @@ ul.jiaoyiz{
                 height: 179px;
             }
         }
-        
+        h1{
+            padding-top: 10px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #52514f;
+            @include font-overflow-more(2);
+        }
     }
 }
 div.yibaibai{
@@ -185,8 +209,73 @@ div.yibaibai{
             height: 170px;
         }
         h1{
+            @include font-overflow(25px);
             font-size: 16px;
+            line-height: 1.6;
+            padding: 20px 0;
         }
     }
 }
 
+div.fupiao{
+    position: fixed;
+    width: 40px;
+    left: 50%;
+    top: 325px;
+    margin-left: 650px;
+    z-index: 1;
+    img{
+        display: block;
+    }
+    .phone{
+        position: relative;
+        .out{
+            display: none;
+            width: 126px;
+            padding: 15px 30px;
+            left: -193px;
+            top: 1px;
+            position: absolute;
+            border: 3px solid #000;
+            background: #fff;
+            h1{
+                font-size: 14px;
+            }
+            h2{
+                font-size: 20px;
+            }
+        }
+    }
+    .ewm{
+        position: relative;
+        .out{
+            display: none;
+            padding: 15px 10px 8px;
+            left: -403px;
+            top: 1px;
+            position: absolute;
+            border: 1px solid #000;
+            background: #fff;
+            width: 380px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+            li{
+                img{
+                    margin: 0 auto;
+                }
+                width: 120px;
+                font-size: 14px;
+                text-align: center;
+                line-height: 2;
+            }
+            
+        }
+    }
+    img.totop{
+        cursor: pointer;
+    }
+    img.close{
+        cursor: pointer;
+    }
+}
