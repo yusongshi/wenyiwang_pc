@@ -282,8 +282,16 @@ div.includebottombox{
 }
 
 div.includebottom2box{
-  background: #f3f1f1;
-  padding: 50px 0;
+  position: relative;
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  padding: 90px 0;
+  img.bgimg{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
   div.includebottom2 {
     width: 1200px;
     margin: 0 auto;

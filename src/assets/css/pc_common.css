@@ -333,8 +333,17 @@ div.includebottombox div.blackcover div.openlist ul.list li {
 }
 
 div.includebottom2box {
-  background: #f3f1f1;
-  padding: 50px 0;
+  position: relative;
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  padding: 90px 0;
+}
+
+div.includebottom2box img.bgimg {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 div.includebottom2box div.includebottom2 {
